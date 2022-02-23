@@ -1,4 +1,4 @@
-<div class="svg-wrapper">
+
     <svg width="469px" height="436px" viewBox="0 0 469 436" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 
         <g id="Stacker" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -115,9 +115,9 @@
             </g>
         </g>
     </svg>
-</div>
-<script  type="text/javascript">
 
+<script  type="text/javascript">
+    const floorDiv = document.getElementById('div-block-floor-plan-id');
     const floor7 = document.getElementById('floor7');
     const floor7TR = document.getElementById('floor7TR');
     const floor7CR = document.getElementById('floor7CR');
@@ -125,10 +125,9 @@
     floor7.addEventListener('mouseleave', () => { floor7TR.style.backgroundColor = "white"; floor7.style.fill = "white"; });
     floor7TR.addEventListener('mouseover', () => { floor7TR.style.backgroundColor = "#00fa83"; floor7.style.fill = "#00fa83"; });
     floor7TR.addEventListener('mouseleave', () => { floor7TR.style.backgroundColor = "white"; floor7.style.fill = "white"; });
-    floor7TR.addEventListener('click', () => { floor7CR.style.display = 'flex'; });
-    floor7.addEventListener('click', () => { floor7CR.style.display = 'flex'; });
+    floor7TR.addEventListener('click', () => { floor7CR.style.display = 'block'; });
+    floor7.addEventListener('click', () => { floorDiv.style.display = 'block'; floor7CR.style.display = 'block'; });
      
-    
     const floor6 = document.getElementById('floor6');
     const floor6TR = document.getElementById('floor6TR');
     const floor6CR = document.getElementById('floor6CR');
@@ -136,9 +135,8 @@
     floor6.addEventListener('mouseleave', () => { floor6TR.style.backgroundColor = "white"; floor6.style.fill = "white"; });
     floor6TR.addEventListener('mouseover', () => { floor6TR.style.backgroundColor = "#00fa83"; floor6.style.fill = "#00fa83"; });
     floor6TR.addEventListener('mouseleave', () => { floor6TR.style.backgroundColor = "white"; floor6.style.fill = "white"; });
-    floor6TR.addEventListener('click', () => { floor6CR.style.display = 'flex'; });
-    floor6.addEventListener('click', () => { floor7CR.style.display = 'flex'; });
-     
+    floor6TR.addEventListener('click', () => { floor6CR.style.display = 'block'; });
+    floor6.addEventListener('click', () => { floorDiv.style.display = 'block'; floor6CR.style.display = 'block'; }); 
     
     const floor5 = document.getElementById('floor5');
     const floor5TR = document.getElementById('floor5TR');
@@ -146,9 +144,8 @@
     floor5.addEventListener('mouseleave', () => { floor5TR.style.backgroundColor = "white"; floor5.style.fill = "white"; });
     floor5TR.addEventListener('mouseover', () => { floor5TR.style.backgroundColor = "#00fa83"; floor5.style.fill = "#00fa83"; });
     floor5TR.addEventListener('mouseleave', () => { floor5TR.style.backgroundColor = "white"; floor5.style.fill = "white"; });
-    floor5TR.addEventListener('click', () => { floor5CR.style.display = 'flex'; });
-    floor5.addEventListener('click', () => { floor7CR.style.display = 'flex'; });
-
+    floor5TR.addEventListener('click', () => { floor5CR.style.display = 'block'; });
+    floor5.addEventListener('click', () => { floorDiv.style.display = 'block'; floor5CR.style.display = 'block'; });
     
     const floor4 = document.getElementById('floor4');
     const floor4TR = document.getElementById('floor4TR');
@@ -156,7 +153,8 @@
     floor4.addEventListener('mouseleave', () => { floor4TR.style.backgroundColor = "white"; floor4.style.fill = "white"; });
     floor4TR.addEventListener('mouseover', () => { floor4TR.style.backgroundColor = "#00fa83"; floor4.style.fill = "#00fa83"; });
     floor4TR.addEventListener('mouseleave', () => { floor4TR.style.backgroundColor = "white"; floor4.style.fill = "white"; });
-    floor4TR.addEventListener('click', () => { floor4CR.style.display = 'flex'; });
-    floor4.addEventListener('click', () => { floor7CR.style.display = 'flex'; });
+    floor4TR.addEventListener('click', () => { floor4CR.style.display = 'block'; });
+    floor4.addEventListener('click', () => { floorDiv.style.display = 'block'; floor4CR.style.display = 'block';  });
     
+
 </script>
